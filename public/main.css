@@ -1,0 +1,18 @@
+.heading {
+  width: 50%;
+  margin-top: 20px;
+  position: relative;
+  left: 20%;
+}
+
+.form-control, .input-group {
+  margin: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.label, .button, .radio {
+  margin-top: 10px;
+  position: relative;
+  left: 20%;
+}

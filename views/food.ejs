@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") -%>
+
+<div class="container-fluid form">
+  <form class="" action="food" method="post">
+    <h1 class="heading">Food eaten</h1>
+
+      <% for (var i = 0; i < fields; i++) { %>
+        <input class="form-control" name="food" type="text" placeholder="Food" aria-label="default input example">
+      <% } %>
+
+
+    <button id="add" type="button" class="button btn btn-success">Add field</button>
+    <button id="delete" type="button" class="button btn btn-success">Delete field</button>
+    <button type="submit" class="button btn btn-success">Create entry</button>
+  </form>
+</div>
+<script src="scripts/foodScript.js" charset="utf-8"></script>
+<%- include("partials/footer.ejs") -%>

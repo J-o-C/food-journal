@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") -%>
+
+<h2 class="heading">Create new feeling entry</h2>
+
+<form action="/feeling" method="post">
+  <label class="label" for="floatingTextarea2">Description</label>
+  <textarea name="description" class="form-control" placeholder="Leave a description here" id="floatingTextarea2" style="height: 100px"></textarea>
+
+
+  <h2 class="heading">How do you feel?</h2>
+
+  <div class="form-check">
+    <input class="radio" id="good" type="radio" name="state" value="good">
+    <label class="label" for="good">Good</label>
+  </div>
+
+  <div class="form-check">
+    <input class="radio" id="regular" type="radio" name="state" value="regular">
+    <label class="label" for="regular">Regular</label>
+  </div>
+
+  <div class="form-check">
+    <input class="radio" id="bad" type="radio" name="state" value="bad">
+    <label class="label" for="bad">Bad</label>
+  </div>
+
+  <button type="submit" class="button btn btn-success">Create entry</button>
+
+</form>
+
+
+<%- include("partials/footer.ejs") -%>

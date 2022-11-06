@@ -4,7 +4,7 @@ module.exports.getDate = function() {
   month = date.getMonth()
   day = date.getDate();
 
-  return {year: year, month: month, day: day};
+  return {thisYear: year, thisMonth: month, today: day};
 }
 
 module.exports.getTime = function () {
